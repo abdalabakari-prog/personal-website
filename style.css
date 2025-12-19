@@ -1,0 +1,143 @@
+/* Global Styles */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: Arial, sans-serif;
+  line-height: 1.6;
+  color: #333;
+  background-color: #f4f4f4;
+}
+
+/* Header Styles */
+header {
+  background-color: #2c3e50;
+  color: #fff;
+  padding: 2em;
+  text-align: center;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+header h1 {
+  margin-bottom: 0.5em;
+  font-size: 2.5em;
+}
+
+header nav a {
+  color: #3498db;
+  text-decoration: none;
+  font-size: 1.2em;
+  padding: 0.5em 1em;
+  border: 2px solid #3498db;
+  border-radius: 5px;
+  transition: all 0.3s;
+}
+
+header nav a:hover {
+  background-color: #3498db;
+  color: #fff;
+}
+
+/* Section Styles */
+section {
+  max-width: 1000px;
+  margin: 2em auto;
+  padding: 2em;
+  background-color: #fff;
+  border-radius: 8px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+section h2 {
+  color: #2c3e50;
+  margin-bottom: 1em;
+  font-size: 2em;
+  border-bottom: 3px solid #3498db;
+  padding-bottom: 0.5em;
+}
+
+section h3 {
+  color: #34495e;
+  margin-top: 1em;
+  margin-bottom: 0.5em;
+  font-size: 1.5em;
+}
+
+section p {
+  margin-bottom: 1em;
+  font-size: 1.1em;
+  color: #555;
+}
+
+/* About Me Section */
+#about ul {
+  list-style: none;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 1em;
+  margin-top: 1em;
+}
+
+#about ul li {
+  background-color: #3498db;
+  color: #fff;
+  padding: 0.5em 1em;
+  border-radius: 5px;
+  font-weight: bold;
+}
+
+/* Projects Section */
+#projects .project {
+  background-color: #ecf0f1;
+  padding: 1.5em;
+  margin-bottom: 1.5em;
+  border-radius: 8px;
+  border-left: 5px solid #3498db;
+  transition: transform 0.3s;
+}
+
+#projects .project:hover {
+  transform: translateX(10px);
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15);
+}
+
+#projects .project h3 {
+  color: #2c3e50;
+  margin-top: 0;
+}
+
+#projects .project p strong {
+  color: #2c3e50;
+}
+
+/* Footer Styles */
+footer {
+  background-color: #2c3e50;
+  color: #fff;
+  text-align: center;
+  padding: 1.5em;
+  margin-top: 2em;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+  header h1 {
+    font-size: 1.8em;
+  }
+
+  section {
+    margin: 1em;
+    padding: 1.5em;
+  }
+
+  section h2 {
+    font-size: 1.5em;
+  }
+
+  #about ul {
+    flex-direction: column;
+  }
+}
